@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$"$endif$>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110065476-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-110065476-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="generator" content="andromeda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400">
+  $for(author-meta)$
+    <meta name="author" content="$author-meta$">
+  $endfor$
+  $if(date-meta)$
+    <meta name="dcterms.date" content="$date-meta$">
+  $endif$
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  $if(title)$
+    <title>
+      $title$
+    </title>
+  $endif$
+  $if(quotes)$
+    <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+  $endif$
+  $if(highlighting-css)$
+    <style type="text/css">
+  $highlighting-css$
+    </style>
+  $endif$
+  $for(css)$
+    <link rel="stylesheet" href="$css$">
+  $endfor$
+  $if(math)$
+    $math$
+  $endif$
+  $for(header-includes)$
+    $header-includes$
+  $endfor$
+  </head>
+  <body>
+    <div class="container-fluid">
+      $for(include-before)$
+      $include-before$
+      $endfor$
+      $if(title)$
+          <h1 class="title">$title$</h1>
+          $if(subtitle)$
+          <h1 class="subtitle">
+              $subtitle$
+          </h1>
+          $endif$
+          $if(author)$
+          <h2 class="author">$for(author)$$author.name$$sep$, $endfor$</h2>
+          $endif$
+          $if(extras)$
+          <h3 class="extras">
+              $extras$
+              $if(more)$
+                  $more$
+              $endif$
+          </h3>
+      $endif$
+
+      $endif$
+      $if(toc)$
+      <nav id="$idprefix$TOC">
+      $toc$
+      </nav>
+      $endif$
+      $if(abstract)$
+      <section id="introduction" class="abstract-section">
+          <!--<h3 class="abstract-h3">Abstract</h3>-->
+      $abstract$
+      </section>
+      $endif$
+$body$
+    </div>  <!-- /.container -->
+    <footer>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    $for(include-after)$
+      $include-after$
+    $endfor$
+  </body>
+</html>

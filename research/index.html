@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Nikos Vasilakis | Research</title>
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="keywords" content="Nikos Vasilakis, Nikos, Vasilakis, Vassilakis, Nikolaos, UPenn, CEID, UPenn, CSAIL, MIT, Computer Science, Distributed Systems, Programming Languages, Computer Security " lang="en">
+    <meta http-equiv="description" content="Digital home of Nikos Vasilakis, a computing scientist and art enthusiast" lang="en">
+
+    <link rel="Shortcut Icon" href="index/favicon.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110065476-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-110065476-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400">
+    <style type="text/css">code{white-space: pre;}</style>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../main.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+           <header>
+      <div class="column">
+        <div class="navigation">
+            <a href="../">about</a> / 
+            <a class="self" href="../research">research</a> / 
+            <a href="../publications">publications</a> /
+            <a href="../activities">activities</a></br>
+        </div>
+        <div class="breadcrumb">
+          Nikos Vasilakis
+        </div>
+      </div>
+    </header>
+<br />
+
+<section id="research-overview" class="level1">
+	<h1>Augmenting Modern Software Systems
+</h1>
+	<p>
+<!--
+Superprogrammers have tapped out. 
+Everyday programmers—the rest of us—are 
+-->
+<strong>I build systems that transform other systems.</strong>
+My systems lift the capabilities of programmers called upon to deal with the complexity of modern software systems.
+They automate <em>away</em> inessential complexity and automate <em>in</em> desired features — securing programs that use hundreds of software dependencies, bolting distribution onto existing applications, and parallelizing large-scale pipelines built out of multi-language components.
+I characterize the behavior of my systems using real workloads seen in practice, often paired with mathematical models and proofs of key properties of interest.
+</p>
+
+<p>
+<h5>Join us!</h5>
+To students and potential collaborators:
+I enjoy creative work that is highly collaborative and has positive impact to as many people as possible.
+Please skim the research thrusts below and <a href="../">email</a> to chat!
+</p>
+
+
+</section>
+
+
+        <section id="supply-chains" class="level2">
+          <h2>Automating Protections Against Software Supply-Chain Threats</h2>
+
+          <p>
+            Modern software incorporates thousands of dependencies as a means of accelerating its development and reducing its cost—at a significant risk to safety and security for both developers and end-users.
+           We have built a series of systems targeting the JavaScript dependency ecosystem—the largest such ecosystem out there—automating the analysis, transformation, and synthesis of dependencies across a variety of threat models.
+</p>
+
+<p>
+<strong>Papers:</strong>
+Our <a href="http://nikos.vasilak.is/p/breakapp:plos:2017.pdf">PLOS17 paper</a> highlights the problem with third-party libraries.
+Our <a href="http://nikos.vasilak.is/p/breakapp:ndss:2018.pdf">NDSS18 paper</a> proposes automated transformations that use operating-system protection mechanisms to isolate selected libraries.
+Our <a href="http://nikos.vasilak.is/p/lya:fse:2021.pdf">FSE21 paper</a> proposes language-based instrumentation techniques applied to the context around each library, offering Turing-complete analysis and protection at a reduced runtime cost.
+Our <a href="http://nikos.vasilak.is/p/mir:ccs:2021.pdf">CCS21a paper</a> proposes a RWX permission model applied at the library boundary, combined with static and load-time program analysis that automates permission inference.
+Our <a href="http://nikos.vasilak.is/p/harp:ccs:2021.pdf">CCS21b paper</a> uses active learning and regeneration to synthesize vulnerability-free replacement libraries that fall under certain computational domains.
+Ongoing research 
+  (i) develops the model behind library recontextualization and its proofs of soundness properties, and 
+  (ii) develops techniques for protecting against memory-unsafe native addons, such as ones written in C/C++ or available in binary.
+</p>
+
+<p>
+<strong>Software:</strong>
+Lya (<a href="http://github.com/andromeda/lya">GitHub</a>) is a system for dynamic program analysis and instrumentation at the boundaries of JavaScript libraries.
+It forms the basis for much of our runtime security work around JavaScript.
+Mir (<a href="http://github.com/andromeda/mir">GitHub</a>) a system for static analysis at the boundaries of JavaScript libraries.
+</p>
+
+<p>
+<a href="https://requiresecurity.com/">Require Security</a> is our company transitioning some of these and other supply-chain security technologies to industry.
+</p>
+
+<p>
+<strong>Collaborators:</strong>
+Achilles Benetopoulos, 
+Alizee Schoen,
+André DeHon, 
+Ben Karel,
+Cristian-Alexandru Staicu, 
+Grigoris Ntousakis, 
+Jiasi Shen, 
+Jonathan M. Smith,
+Konstantinos Kallas, 
+Martin Rinard,
+Michael Pradel,
+Nathan Dautenhahn,
+Nick Roessler, 
+Shivam Handa, and
+Veit Heller.
+</p>
+</section>
+
+        <section id="shell-parallelization" class="level2">
+          <h2>Automating Shell Script Parallelization/Distribution</h2>
+
+          <p>
+					Shell scripting is used pervasively, <!--especially by non-expert programmers,--> 
+            partly due to its simplicity in combining components (commands) written in multiple languages.
+<!--ranging from binary executables to interpreted scripts to virtually any command available in a computer!-->
+					Unfortunately, this language-agnostic composition hinders automated parallelization and distribution, often forcing developers to manually rewrite shell programs (and their components) in other languages that support these features.
+          We have several projects that, combined, offer automated parallelization (and, soon, distribution) of Unix/Linux shell scripts—along with serious correctness and compatibility guarantees.
+					</p>
+
+<p>
+<strong>Papers:</strong>
+Our <a href="http://nikos.vasilak.is/p/m31:hotos:2015.pdf">HotOS15 paper</a> outlines the problem with today's distributed computing software and offers a vision for the future.
+Our <a href="http://nikos.vasilak.is/p/pash:eurosys:2021.pdf">EuroSys21 paper</a> describes our PaSh system for parallelizing commands.
+Our <a href="http://nikos.vasilak.is/p/pash:icfp:2021.pdf">ICFP21 paper</a> formalizes the model sitting at the core of PaSh and proves its parallelizing transformations correct.
+Our <a href="http://nikos.vasilak.is/p/pash:hotos:2021.pdf">HotOS21 paper</a> outlines a vision for the future of the shell, and our <a href="http://nikos.vasilak.is/p/shellpanel:hotos:2021.pdf">HotOS21 panel</a> discussed future avenues for <a href="https://arxiv.org/abs/2109.11016">cross-discipline shell-related research captured in the panel report</a>.
+Our <a href="http://nikos.vasilak.is/p/pash:osdi:2022.pdf">OSDI22 paper</a> tackles POSIX-compliant parallelization in the presence of fully dynamic behavior pervasive in the shell—via just-in-time compilation, intermixing evaluation and optimization of individual expressions.
+Ongoing research tackles automated generation of critical runtime components, through a combination of <a href="http://nikos.vasilak.is/p/kumquat:arxiv:2021.pdf">active learning and program synthesis</a>
+</p>
+
+<p>
+<strong>Software:</strong>
+PaSh (<a href="https://binpa.sh/">website</a>, <a href="https://github.com/binpash">GitHub</a>) is an award-winning shell parallelization system that forms the basis for all our shell-related research.
+PaSh is open-source, hosted by the Linux Foundation, and under heavy development.
+</p>
+
+<p>
+<strong>Collaborators:</strong>
+Konstantinos Kallas,
+Michael Greenberg,
+Achilles Benetopoulos,
+Thurston Dang,
+Shivam Handa,
+Dimitris Karnikis,
+Konstantinos Mamouras,
+Lazar M. Cvetković,
+Tammam Mustafa,
+Martin Rinard, 
+Jiasi Shen,
+and <a href="https://github.com/binpash/pash/graphs/contributors">several open-source contributors</a>.  
+</p>
+</section>
+
+
+
+        <section id="secure-scalable" class="level2">
+          <h2>Automated Transformation Towards Secure Scalable Computing Paradigms</h2>
+          <p>
+            Recent trends are pushing developers towards new paradigms of secure and scalable computing—<em>e.g.</em>, confidential computing, microservices, serverless computing, edge computing, <em>etc</em>.
+            Transforming a conventional program to leverage these paradigms is a laborious manual process that can lead to suboptimal performance and in many cases even break the program.
+            We are developing systems supporting this kind of decomposition, often leveraging special hardware capabilities when possible.
+            </p>
+<p>
+<strong>Papers:</strong>
+Our <a href="http://nikos.vasilak.is/p/ignis:pldi:2019.pdf">PLDI paper</a> presents a module-level decomposition, resource awareness, and scale-out of bottlenecked components.
+Our <a href="http://nikos.vasilak.is/p/ar:edgesys:2018.pdf">EdgeSys</a>, <a href="http://nikos.vasilak.is/p/ar:apsys:2018.pdf">APSys</a>, and 
+<a href="http://nikos.vasilak.is/p/tmc:apnet:2019.pdf">APNet</a> papers describe several components of this vision.
+Ongoing work tackles
+  (i) automated application decomposition of monolithic applications towards confidential computing, and
+  (ii) automated application decomposition of monolithic applications towards microservice and serverless computing.
+</p>
+
+<p>
+<strong>Software:</strong>
+Atlas (<a href="https://github.com/atlas-runtime">GitHub</a>) is a new runtime environment that support seamless offloading and scale-out, including over Trusted Execution Environments such as Intel SGX.
+Atlas forms the basis upon which we build a lot of our distributed infrastructure.
+</p>
+
+<p>
+<strong>People:</strong>
+Ricardo A. Baratto,
+Ben Karel,
+Dimitris Karnikis,
+Henri Maxime Demoulin,
+Yash Palkhiwala, 
+Martin Rinard,
+and Felix Stutz.
+</p>
+          </section>
+
+    </div>  <!-- /.container -->
+    <footer>
+      <table border="0">
+        <tr>
+          <td align="left"> v.22.1 </td>
+          <td align="right"> </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
+

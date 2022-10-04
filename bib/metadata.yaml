@@ -1,0 +1,10 @@
+---
+title:  'Bibtex file'
+author:
+- name: Nikos Vasilakis
+  email: nikos@vasilak.is
+abstract: |
+  This file can be accessed in both [bibtex](./nv.bib) and [markdown](./README.md) forms, from which it gets generated.
+...
+
+
