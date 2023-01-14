@@ -29,10 +29,21 @@ parallelization of our benchmark scripts.
 ### Themis: A Secure Decentralized Framework for Microservice Interaction in Serverless Computing
 
 ```bibtex
-@misc{themis:submission:2022,
-  title={Themis: A Secure Decentralized Framework for Microservice Interaction in Serverless Computing}, 
-  author={Angeliki Aktypi and Nikos Vasilakis and Kasper Rasmussen},
-  year={2022}
+@inproceedings{10.1145/3538969.3538983,
+ author = {Aktypi, Angeliki and Karnikis, Dimitris and Vasilakis, Nikos and Rasmussen, Kasper},
+ title = {Themis: A Secure Decentralized Framework for Microservice Interaction in Serverless Computing},
+ year = {2022},
+ isbn = {9781450396707},
+ publisher = {Association for Computing Machinery},
+ address = {New York, NY, USA},
+ url = {https://doi.org/10.1145/3538969.3538983},
+ doi = {10.1145/3538969.3538983},
+ booktitle = {Proceedings of the 17th International Conference on Availability, Reliability and Security},
+ articleno = {10},
+ numpages = {11},
+ keywords = {Service mesh., Serverless, Security, DHT},
+ location = {Vienna, Austria},
+ series = {ARES '22}
 }
 ```
 
@@ -93,6 +104,47 @@ community to arms.
 
 
 ## Conference Papers
+
+#### DiSh: Dynamic Shell-Script Distribution
+
+#### SecBench.js: An Executable Security Benchmark Suite for Server-Side JavaScript
+
+#### Towards Practical Application-level Support for Privilege Separation
+
+```bibtex
+@inproceedings{10.1145/3564625.3564664,
+ author = {Sultana, Nik and Zhu, Henry and Zhong, Ke and Zheng, Zhilei and Mao, Ruijie and Chauhan, Digvijaysinh and Carrasquillo, Stephen and Zhao, Junyong and Shi, Lei and Vasilakis, Nikos and Loo, Boon Thau},
+ title = {Towards Practical Application-Level Support for Privilege Separation},
+ year = {2022},
+ isbn = {9781450397599},
+ publisher = {Association for Computing Machinery},
+ address = {New York, NY, USA},
+ url = {https://doi.org/10.1145/3564625.3564664},
+ doi = {10.1145/3564625.3564664},
+ booktitle = {Proceedings of the 38th Annual Computer Security Applications Conference},
+ pages = {71–87},
+ numpages = {17},
+ location = {Austin, TX, USA},
+ series = {ACSAC '22}
+}
+```
+
+Privilege  separation   (privsep)  is  an  effective   technique  for  improving
+software’s security, but privsep involves decomposing software into components
+and  assigning   them  different  privileges.   This  is  often   laborious  and
+error-prone.  This  paper contributes  the  following  for applying  privsep  to
+C  software:  (1)  a  portable, lightweight,  and  distributed  runtime  library
+that  abstracts  externally-enforced  compartment  isolation;  (2)  an  abstract
+compartmentalization  model  of  software   for  reasoning  about  privsep;  and
+(3)  a  privsep-aware Clang-based  tool  for  code analysis  and  semi-automatic
+software  transformation to  use the  runtime library.  The evaluation  spans 19
+compartmentalizations of third-party software and  examines: Security: 4 CVEs in
+widely-used software were rendered  unexploitable; Approximate Effort Saving: on
+average, the  synthesis-to-annotation code  ratio was  greater than  11.9 (i.e.,
+10  ×  lines  of  code  were generated  for  each  annotation);  and  Overhead:
+execution-time overhead was less than 2%,  and memory overhead was linear in the
+number of compartments.
+
 
 #### Practically Correct, Just-in-Time Shell Script Parallelization
 
