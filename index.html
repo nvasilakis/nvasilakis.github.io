@@ -77,16 +77,19 @@
         <section id="latest-publications" class="level2">
           <h2>Recent News</h2>
 <p>
+Oct. 2023: The <a href="https://docs.google.com/document/d/1sAwonBVJr4tCBQdaoXGRAr5R4pi-Jw7Oumf_VQg-nQs">3rd PaSh Research Workshop</a> is held at Brown University!
+</p>
+<p>
+Sep. 2023: Brown CS News published <a href="https://awards.cs.brown.edu/2023/09/26/ntousakis-kemerlis-vasilakis-and-collaborators-win-the-acm-asiaccs-23-distinguished-paper-award/">an article on our ACM AsiaCCS'23 distinguished paper award</a>!
+</p>
+<p>
 Jun. 2023: We are organizing <a href="https://scored.dev">ACM SCORED'23</a>, a workshop on <a href="https://scored.dev">software supply-chain security</a>!
 </p>
 <p>
-Jun. 2023: <a href="https://nikos.vasilak.is/p/binwrap:asiaccs:2023.pdf">BinWrap</a> is about to receive the distinguished-paper award at <a href="https://asiaccs2023.org/">AsiaCCS'23</a>!
+Jun. 2023: <a href="https://nikos.vasilak.is/p/binwrap:asiaccs:2023.pdf">BinWrap</a> to receive the distinguished-paper award at <a href="https://asiaccs2023.org/">AsiaCCS'23</a>! 
 </p>
 <p>
 May 2023: <a href="https://nikos.vasilak.is/p/hs:hotos:2023.pdf">hs</a>, the out-of-order, speculative-execution PaSh extensions made it <a href="https://sigops.org/s/conferences/hotos/2023/">HotOS'23</a>!
-</p>
-<p>
-Aprl 2023: <a href="https://www.ntousakis.com/">Grigoris Ntousakis</a> joins the group for a nine-month internship on supply-chain security!
 </p>
 <p>
 Mar.2023: <a href="http://nikos.vasilak.is/p/binwrap:asiaccs:2023.pdf">BinWrap</a>, a language-binary protection hybrid for native add-ons made it to <a href="https://asiaccs2023.org/">AsiaCCS'23</a>!
@@ -99,9 +102,6 @@ Dec.2022: <a href="http://nikos.vasilak.is/p/secbench:icse:2023.pdf">SecBench.js
 </p>
 <p>
 Nov.2022: <a href="http://nikos.vasilak.is/p/pitchfork:acsac:2022.pdf">Pitchfork</a>, an application-level privilege separation <a href="http://pitchfork.cs.iit.edu/">system</a>, made it to <a href="https://www.acsac.org/2022/program/">ACSAC'22</a>!
-</p>
-<p>
-Oct.2022: <a href="https://github.com/gliargovas">Georgios Liargkovas</a> joins the group for a six-month internship on <a href="https://github.com/binpash">PaSh</a>!
 </p>
 <p>
 Jun.2022: MIT News covered our work on PaSh: <a href="https://news.mit.edu/2022/faster-unix-computing-program-0607">Faster computing results without fear of errors</a>!
@@ -135,8 +135,10 @@ Nov.2021: At CCS'21 presenting on <a href="http://nikos.vasilak.is/p/mir:ccs:202
 Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the group for his M.Eng thesis on distributed <a href="https://github.com/binpash">PaSh</a> extensions!
 </p>
 -->
-
           </section>
+
+
+
 
         <section id="current-projects" class="level2">
           <h2>Current Projects</h2>
@@ -145,6 +147,7 @@ Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the grou
         </p>
 
           <section id="supply-chain" class="level4">
+          <img class="pix" src="./img/dependencies.jpg" width="100px" alt="Modern dependencies"/>
             <p>
             <a href="./research/#supply-chains">Automating Protections Against Software Supply-Chain Threats</a>:
             Modern software incorporates thousands of dependencies as a means of accelerating its development and reducing its cost—at a significant risk to safety and security for both developers and end-users.
@@ -154,17 +157,18 @@ Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the grou
 
 
 				<section id="shell-parallelization" class="level4">
-          <img class="avatar" src="./img/pash-logo.jpg" width="100px" alt="PaSh Logo"/>
-					<p> <a href="./research/#shell-parallelization">Automating Shell Script Parallelization/Distribution</a>:
-					Shell scripting is used pervasively, <!--especially by non-expert programmers,--> 
-            partly due to its simplicity in combining components (commands) written in multiple languages.
+          <img class="pix" src="./img/pash-logo.jpg" width="100px" alt="PaSh Logo"/>
+					<p> <a href="./research/#shell-parallelization">Automating the Acceleration and Scale-out of Software Systems</a>:
+					Some programming environments, such as the shell, are used pervasively <!--especially by non-expert programmers,--> 
+            partly due to their simplicity in combining components (commands) written in multiple languages.
 <!--ranging from binary executables to interpreted scripts to virtually any command available in a computer!-->
 					Unfortunately, this language-agnostic composition hinders automated parallelization and distribution, often forcing developers to manually rewrite shell programs (and their components) in other languages that support these features.
-          We have built a system, <a href="https://github.com/binpash">PaSh</a>, and several extensions and sibling projects that offer automated parallelization (and, soon, distribution) of Unix/Linux shell scripts—along with serious correctness and compatibility guarantees.
+          We have built a system, <a href="https://github.com/binpash">PaSh</a>, and several extensions and sibling projects that offer automated acceleration and scale-out in these environments—along with serious correctness and compatibility guarantees.
 					</p>
 				</section>
 
           <section id="secure-scalable" class="level4">
+          <img class="pix" src="./img/microservices.jpg" width="100px" alt="Microservices"/>
             <p>
             <a href="./research/#secure-scalable">Automated Transformation Towards Secure Scalable Computing Paradigms</a>:
             Recent trends are pushing developers towards new paradigms of secure and scalable computing—<em>e.g.</em>, confidential computing, microservices, serverless computing, and edge computing.
@@ -177,52 +181,40 @@ Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the grou
         <section id="latest-publications" class="level2">
           <h2>Some Recent Publications</h2>
 
+
+          <section id="binwrap-hybrid-protection-against-native-node.js-add-ons" class="level4">
+            <a href="http://nikos.vasilak.is/p/binwrap:asiaccs:2023.pdf">BinWrap: Hybrid Protection Against Native Node.js Add-ons</a>
+            <p> George Christou, Grigoris Ntousakis, Eric Lahtinen, Sotiris Ioannidis, Vasileios P. Kemerlis, and <strong> Nikos Vasilakis</strong>.
+            <em>ACM ASIA Conference on Computer and Commu- nications Security (ASIA CCS ’23), </em>  <br />
+            <em><strong>Received Distinguished Paper Award</strong></em><br />
+              <a href="https://dl.acm.org/doi/10.1145/3579856.3590330">ACM DL</a> | 
+              <a href="http://nikos.vasilak.is/p/binwrap:asiaccs:2023.pdf">PDF</a> | 
+              <a href="https://github.com/atlas-brown/binwrap">code</a>
+            </p>
+          </section>
+
+
+          <section id="dish:-dynamic-shell-script-distribution" class="level4">
+            <a href="http://nikos.vasilak.is/p/pash:nsdi:2023.pdf">DiSh: Dynamic Shell-Script Distribution</a>
+            <p> Tammam Mustafa, Pratyush Das, Konstsantinos Kallas, and <strong> Nikos Vasilakis</strong>.
+            <em>20th USENIX Symposium on Networked Systems Design and Implementation (NSDI'23)</em>  <br />
+              <a href="https://www.usenix.org/conference/nsdi23/presentation/mustafa">Usenix</a> | 
+              <a href="http://nikos.vasilak.is/p/pash:nsdi:2023.pdf">PDF</a> | 
+              <a href="http://github.com/binpash/pash/">code</a>
+            </p>
+          </section>
+
           <section id="practically-correct-just-in-time-shell-script-parallelization" class="level4">
             <a href="http://nikos.vasilak.is/p/pash:osdi:2022.pdf">Practically Correct, Just-in-Time Shell Script Parallelization</a>
             <p> Konstantinos Kallas, Tammam Mustafa, Jan Bielak,  Dimitris Karnikis,  Thurston H.Y. Dang,  Michael Greenberg,  and <strong>Nikos Vasilakis</strong>.
             <em>16th USENIX Symposium on Operating Systems Design and Implementation (OSDI22)</em>  <br />
               <a href="https://www.usenix.org/conference/osdi22/presentation/kallas">USENIX</a> | 
               <a href="http://nikos.vasilak.is/p/pash:osdi:2022.pdf">PDF</a> | 
-              <a href="http://github.com/binpash">code</a> | 
+              <a href="http://github.com/binpash/pash">code</a> | 
               <a href="./bib/#practically-correct-just-in-time-shell-script-parallelization">bibtex</a>
             </p>
           </section>
 
-          <section id="mir-automated-quantifiable-privilege-reduction-against-dynamic-library-compromise-in-javascript" class="level4">
-            <a href="http://nikos.vasilak.is/p/mir:ccs:2021.pdf">Preventing Dynamic Library Compromise on Node.js via RWX-Based Privilege Reduction</a>
-            <p><strong>Nikos Vasilakis</strong>, Cristian-Alexandru Staicu, Grigoris Ntousakis, Konstantinos Kallas, Ben Karel, Andr&eacute; DeHon, Michael Pradel.
-            <em>ACM Conference on Computer and Communications Security (ACM CCS21)</em> <br />
-              <a href="https://dl.acm.org/doi/abs/10.1145/3460120.3484535">ACM DL</a> | 
-              <a href="http://nikos.vasilak.is/p/mir:ccs:2021.pdf">PDF</a> | 
-              <a href="http://github.com/andromeda/mir">code</a> | 
-              <a href="https://arxiv.org/abs/2011.00253">arxiv:2011.00253</a> | 
-              <a href="./bib/#preventing-dynamic-library-compromise-on-node.js-via-rwx-based-privilege-reduction">bibtex</a>
-            </p>
-          </section>
-
-          <section id="efficient-module-level-dynamic-analysis-for-dynamic-languages-with-module-recontextualization" class="level4">
-            <a href="http://nikos.vasilak.is/p/lya:fse:2021.pdf">Efficient Module-Level Dynamic Analysis for Dynamic Languages with Module Recontextualization</a>
-            <p><strong>Nikos Vasilakis</strong>, Grigoris Ntousakis, Veit Heller, Martin C. Rinard.
-            <em>ACM Joint European Software Engineering Conference &#38; Symposium on the Foundations of Software Engineering (ESEC/FSE 2021)</em><br/>
-            <em><strong>Received Distinguished Paper Award</strong></em><br />
-              <a href="https://dl.acm.org/doi/10.1145/3468264.3468574">ACM DL</a> | 
-              <a href="http://nikos.vasilak.is/p/lya:fse:2021.pdf">PDF</a> | 
-              <a href="http://github.com/andromeda/lya">code</a> | 
-              <a href="./bib/#efficient-module-level-dynamic-analysis-for-dynamic-languages-with-module-recontextualization">bibtex</a>
-            </p>
-          </section>
-
-          <section id="pash-light-touch-data-parallel-shell-processing" class="level4">
-            <a href="http://nikos.vasilak.is/p/pash:eurosys:2021.pdf">PaSh: Light-touch Data-Parallel Shell Processing</a>
-            <p><strong>Nikos Vasilakis</strong>*, Konstantinos Kallas*, Konstantinos Mamouras, Achilles Benetopoulos, Lazar Cvetkovi&cacute;.
-            <em>ACM European Conference on Computer Systems (EuroSys'21)</em><br/>
-            <em><strong>Received Best Paper Award</strong></em><br />
-              <a href="https://dl.acm.org/doi/10.1145/3447786.3456228">ACM DL</a> | 
-              <a href="http://nikos.vasilak.is/p/pash:eurosys:2021.pdf">PDF</a> | 
-              <a href="http://github.com/andromeda/pash">code</a> | 
-              <a href="./bib/#pash-light-touch-data-parallel-shell-processing">bibtex</a>
-            </p>
-          </section>
         <p>
           <a href="./publications">Full list</a> of publications.
         </p>
@@ -240,12 +232,50 @@ Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the grou
         </section>
         -->
 
+        <section id="current-students" class="level2">
+          <h2>Current Students</h2>
+            <p>
+            PhD students: <a href="https://www.oguzhancolkesen.com">Oğuzhan Çölkesen</a>, <a href="https://yizhengx.github.io/">Yizheng Xie</a>.
+<br />
+            M.Sc. students:
+            <a href="https://huangworld.github.io/">Zhicheng Huang</a>.
+<br />
+            Undergraduate students:
+            <a href="https://www.anarsipur.com">Anirudh Narsipur</a>,
+            <a href="https://www.linkedin.com/in/sethsabar/">Seth Sabar</a>,
+            <a href="https://forthoney.github.io/">Seong-Heon Jung</a>,
+            <a href="https://jdai1.github.io/">Julian Dai</a>,
+            <a href="https://www.linkedin.com/in/christinastepin/">Christina Stepin</a>.
+<br />
+            Visiting students:
+            <a href="https://nikpag.github.io/">Nikos Pagonas</a>,
+            <a href="https://www.ntousakis.com">Grigoris Ntousakis</a>,
+            <a href="https://gliargovas.github.io/">Giorgos Liargkovas</a>.
+            </p>
+
+<!--
+            <p>
+              <a href="./activities/#mentoring">Full list</a> of present and past students.
+            </p>
+-->
+        </section>
+
+
+<!--
+        <section id="current-courses" class="level2">
+          <h2>Current Courses</h2>
+
+          In Spring 2024, I teach <a href="https://cs.brown.edu/courses/csci1380/s23/">CS 1380: Distributed Computing Systems</a>.
+          This new iteration of the course has been restructured and centered around the development of a distributed search engine.
+
+        </section>
+-->
 
     </div>  <!-- /.container -->
     <footer>
       <table border="0">
         <tr>
-          <td align="left"> v.22.1 </td>
+          <td align="left"> v.22.4 </td>
           <td align="right"> </td>
         </tr>
       </table>
