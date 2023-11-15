@@ -3,11 +3,9 @@
 # curl nikos.vasilak.is/up > up && chmod +x up && ./up
 
 REPOS=".dotrc .vim .emacs.d .scripts";
-RC=".bashrc .conkyrc .hgrc .irbrc .vimrc .zshrc .pythonrc .screenrc .emacs";
-RC="${RC} .ocamlinit .pentadactylrc  .gitconfig .Xdefaults .ss";
-PROTO="git"
+RC=".bashrc .vimrc .zshrc .pythonrc .screenrc .emacs .gitconfig .ss";
 
-if [[ "$1" == '--clear' ]]; then
+if [[ "$1" == '--clean' ]]; then
   cd ~
   rm -rf $REPOS
   for i in $RC; do
