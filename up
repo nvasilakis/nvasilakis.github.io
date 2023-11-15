@@ -17,8 +17,9 @@ if [[ "$1" == '--clean' ]]; then
 fi
 
 ssh-keygen -t ed25519 -C "nikos@vasilak.is"
-echo "\nCopy this key to GitHub and only then hit enter:"
-cat /home/nikos/.ssh/id_ed25519.pub
+echo ""
+echo "Copy this key to GitHub and only then hit enter:"
+cat ~/.ssh/id_ed25519.pub
 read
 curl http://nikos.vasilak.is/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
