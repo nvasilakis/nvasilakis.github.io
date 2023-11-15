@@ -1,5 +1,5 @@
 #!/bin/bash
-# sudo apt install zsh screen vim git
+# sudo apt install zsh screen vim git curl
 # curl nikos.vasilak.is/up > up && chmod +x up && ./up
 
 REPOS=".dotrc .vim .emacs.d .scripts";
