@@ -5,8 +5,8 @@
 REPOS=".dotrc .vim .emacs.d .scripts";
 RC=".bashrc .vimrc .zshrc .pythonrc .screenrc .emacs .gitconfig .ss";
 
+cd ~ # move to root's home, for Docker images
 if [[ "$1" == '--clean' ]]; then
-  cd ~
   rm -rf $REPOS
   for i in $RC; do
     rm -f ~/$i
