@@ -95,7 +95,7 @@ I am also an Affiliated Researcher under Athena's new <a href="https://archimede
 
 
 <p>
-Aug'25: Two <a href="https://www.usenix.org/conference/nsdi26">NSDI'26</a> papers on optimization prediction and fault tolerance for opaque distributed systems!
+Aug'25: Two papers accepted at <a href="https://www.usenix.org/conference/nsdi26">NSDI'26</a> on opaque distributed (1) <a href="https://github.com/atlas-brown/slowpoke">optimization prediction</a> and (2) <a href="https://github.com/binpash/fractal">fault tolerance</a>!
 <br />
 Jul'25: Our <a href="https://nikos.vasilak.is/p/koala:atc:2025.pdf">benchmark suite for the shell</a> received the <a href="https://www.usenix.org/conferences/best-papers">Best Paper Award</a> at <a href="https://www.usenix.org/conference/atc25">USENIX ATC'25</a>!
 <br />
@@ -181,9 +181,9 @@ Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the grou
         <section id="current-courses" class="level2">
           <h2>Current Courses/Seminars</h2>
         <p>
-        Fall'25 (new: <code>COEX+WRIT</code>): <a href="https://cs.brown.edu/courses/csci2952r/">CS1952/2952R: Systems Transforming Systems</a> 
+        Fall'25: <a href="https://cs.brown.edu/courses/csci2952r/">CS1952/2952R: Systems Transforming Systems</a> (new: <code>COEX</code><em>+</em><code>WRIT</code>)
         <br />
-        Spring'25: <a href="https://cs.brown.edu/courses/csci1380/">CS1380: Distributed Computing Systems</a> 
+        Spring'25: <a href="https://cs.brown.edu/courses/csci1380/">CS1380/1385/2380: Distributed Computing Systems</a> 
         </p>
         <p>
           <a href="./activities#teaching">Full list</a> of courses I've taught.
@@ -208,7 +208,7 @@ Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the grou
             <p>
             <a href="https://atlas.cs.brown.edu/supply-chain/">Automating Protections Against Software Supply-Chain Threats</a>:
             Modern software incorporates thousands of dependencies as a means of accelerating its development and reducing its cost—at a significant risk to safety and security for both developers and end-users.
-           We have built a series of systems targeting the JavaScript dependency ecosystem—the largest such ecosystem out there—automating the analysis, transformation, and synthesis of JavaScript dependencies across a variety of threat models.
+            We have built a series of systems targeting the JavaScript dependency ecosystem—the largest such ecosystem out there—automating the analysis, transformation, and synthesis of JavaScript dependencies across a variety of threat models.
 </p>
           </section>
 
@@ -220,7 +220,7 @@ Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the grou
             partly due to their simplicity in combining components (commands) written in multiple languages.
 <!--ranging from binary executables to interpreted scripts to virtually any command available in a computer!-->
 					Unfortunately, this language-agnostic composition hinders automated parallelization and distribution, often forcing developers to manually rewrite shell programs (and their components) in other languages that support these features.
-          We have built a system, <a href="https://github.com/binpash">PaSh</a>, and several extensions and sibling projects that offer automated acceleration and scale-out in these environments—along with serious correctness and compatibility guarantees.
+          We have a series of systems, including <a href="https://github.com/binpash">PaSh</a>, and several extensions and sibling projects that offer automated acceleration and scale-out in these environments—along with serious correctness and compatibility guarantees.
 					</p>
 				</section>
 
@@ -238,9 +238,20 @@ Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the grou
             </p>
           </section>
 
-
         <section id="latest-publications" class="level2">
           <h2>Some Recent Publications</h2>
+
+          <section id="the-koala-benchmarks-for-the-shell-characterization-and-implications" class="level4">
+            <a href="http://nikos.vasilak.is/p/koala:atc:2025.pdf">The Koala Benchmarks for the Shell: Characterization and Implications</a>
+            <p> Evangelos Lamprou, Ethan Williams, Georgios Kaoukis, Zhuoxuan Zhang, Michael Greenberg, Konstantinos Kallas, Lukas Lazarek, <strong>Nikos Vasilakis</strong>.
+                <em>2025 USENIX Annual Technical Conference (ATC'25)</em><br/>
+            <em><strong>Received Best Paper Award</strong></em><br />
+              <a href="https://www.usenix.org/conference/atc25/presentation/lamprou">USENIX</a> | 
+              <a href="http://nikos.vasilak.is/p/koala:atc:2025.pdf">PDF</a> | 
+              <a href="https://kben.sh/">website</a> |
+              <a href="https://github.com/kbensh">GitHub</a>
+            </p>
+          </section>
 
           <section id="from-ahead-of-to-just-in-time-and-back-again-static-analysis-for-unix-shell-programs" class="level4">
             <a href="http://nikos.vasilak.is/p/sash:hotos:2025.pdf">From Ahead-of- to Just-in-Time and Back Again: Static Analysis for Unix Shell Programs</a>
@@ -260,17 +271,6 @@ Oct.2021: <a href="https://tammammustafa.com/">Tammam Mustafa</a> joins the grou
               <a href="https://dl.acm.org/doi/10.1145/3579856.3590330">ACM DL</a> | 
               <a href="http://nikos.vasilak.is/p/binwrap:asiaccs:2023.pdf">PDF</a> | 
               <a href="https://github.com/atlas-brown/binwrap">code</a>
-            </p>
-          </section>
-
-
-          <section id="dish:-dynamic-shell-script-distribution" class="level4">
-            <a href="http://nikos.vasilak.is/p/pash:nsdi:2023.pdf">DiSh: Dynamic Shell-Script Distribution</a>
-            <p> Tammam Mustafa, Pratyush Das, Konstsantinos Kallas, and <strong> Nikos Vasilakis</strong>.
-            <em>20th USENIX Symposium on Networked Systems Design and Implementation (NSDI'23)</em>  <br />
-              <a href="https://www.usenix.org/conference/nsdi23/presentation/mustafa">Usenix</a> | 
-              <a href="http://nikos.vasilak.is/p/pash:nsdi:2023.pdf">PDF</a> | 
-              <a href="http://github.com/binpash/pash/">code</a>
             </p>
           </section>
 
